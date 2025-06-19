@@ -25,9 +25,9 @@
     padding-block: 8px;
     flex-direction: column;
     position: absolute;
-    top: 90px;
+    top: 80px;
     display: none;
-    right: 16px;
+    right: 0;
     border-radius: 6px;
     border: var(--border-1);
     &.active{
