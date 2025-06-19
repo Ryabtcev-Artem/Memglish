@@ -2,25 +2,26 @@
 :root {
   --bg: #1d1e24;              // Основной фон
   --surface: #2d2e33;         // Фон блоков (карточек, навигации)
-  --surface-contrast: #48484f;         // Фон блоков (карточек, навигации)
-  --primary: #11d4ad;         // Основной акцентный цвет (кнопки, ссылки)
+  --surface-contrast: #424347;         // Фон блоков (карточек, навигации)
+  --primary: #11d4ad;        // Основной акцентный цвет (кнопки, ссылки)
+  --primary-dark: #099c81;
   --primary-hover: #0fbf9b;   // Ховер для акцента
   --text: #e1e2e6;            // Обычный текст
   --text-muted: #a0a0a8;      // Подписи, второстепенный текст
   --heading: #ffffff;         // Заголовки
   --border: #3b3c44;          // Разделители
   --danger: #fa5252;
+  --card: #3a3a41;
   --success: #40c057;
   --bg-surface: #26282e;
   --border-1: 1px solid var(--border)
 }
 html[data-theme="light"] {
   --bg: #f9f9fa;
+  --card: #f2f2f5;
   --surface: #ffffff;
   --surface-contrast: #a0a0a8;         // Фон блоков (карточек, навигации)
   --bg-surface: #f2f3f5;
-  --primary: #0ca58b;
-  --primary-hover: #08957e;
   --text: #212529;
   --text-muted: #6c757d;
   --heading: #121212;

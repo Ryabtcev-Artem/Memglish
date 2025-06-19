@@ -19,6 +19,10 @@
   gap: 8px;
   top: 16px;
   left: 26px;
+  @include mobile{
+    height: 10px;
+    left: 14px;
+  }
 }
 .point{
   background-color: var(--surface-contrast);
@@ -27,6 +31,57 @@
   border-radius: 50%;
 }
 .title{
+  font-weight: 400;
+  text-align: center;
+}
+
+.subtitle{
   text-align: center;
   margin-bottom: 16px;
+}
+.viewCatalog{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: var(--primary-dark);
+  display: block;
+  margin-inline: auto;
+  border:none;
+  padding: 16px;
+  color: white;
+  font-size: 16px;
+  transition-duration: .5s;
+  transform-origin: center;
+  &:hover{
+    transform: translateY(-4px);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-20deg);
+    animation: shine 3.3s ease-in-out infinite;
+  }
+  border-radius: 6px;
+}
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  50%{
+    left: 125%;
+  }
+  100% {
+    left: 125%;
+  }
 }
